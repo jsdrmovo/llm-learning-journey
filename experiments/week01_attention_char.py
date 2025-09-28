@@ -11,7 +11,7 @@ hello world! llm theory first
 """
 chars = sorted(list(set(CORPUS)))
 stoi = {ch:i for i,ch in enumerate(chars)}
-itos = {i:ch for ch,i in stoi.items()}
+itos = {i:ch for i,ch in stoi.items()}
 vocab_size = len(chars)
 
 def encode(s): return torch.tensor([stoi[c] for c in s], dtype=torch.long)
