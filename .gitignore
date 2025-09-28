@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+*.nb.html
+
+# Data & outputs
+data/
+outputs/
+*.log
+
+# OS/Editors
+.DS_Store
+.idea/
+.vscode/
