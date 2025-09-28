@@ -16,4 +16,4 @@ outputs/
 # OS/Editors
 .DS_Store
 .idea/
-.vscode/
+.vscode

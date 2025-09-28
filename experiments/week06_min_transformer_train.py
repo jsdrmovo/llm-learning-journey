@@ -46,7 +46,7 @@ class LM(nn.Module):
         super().__init__()
         self.tok = nn.Embedding(vocab, cfg["d_model"])
         self.pos = nn.Embedding(cfg["seq_len"], cfg["d_model"])
-        self.blocks = nn.Sequential(*[Block(cfg["d_model"], cfg["n_head"]) for _ in range(cfg["n_layer"])])
+        self.blocks = nn.Sequential(*[Block(cfg["d_model"], cfg["n_head"]) for _ in range(cfg["n_layer"])] )
         self.ln = nn.LayerNorm(cfg["d_model"])
         self.head = nn.Linear(cfg["d_model"], vocab)
         self.cfg = cfg
